@@ -1,7 +1,7 @@
 <?php
     ob_start();
     require 'database.php';
-    require 'session.php';
+    require './session/session.php';
     session_start();
 ?>
 
@@ -21,7 +21,9 @@
         <?php
         if (!empty($_POST['submit_random_number'])) {
             if ($_POST['score'] > 100) {
-                header("Location: backoffice_accueil.php");
+                $_SESSION['winGame'] = 1;
+                setcookie("sessionTokenApi", "123456789", time() + 900);
+                header("Location: gameTwo.php");
                 exit;
             } else {
         ?>
