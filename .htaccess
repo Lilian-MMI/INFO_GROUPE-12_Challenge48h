@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_USER_AGENT} !ynovinformatique [NC]
+RewriteRule .* error.php
