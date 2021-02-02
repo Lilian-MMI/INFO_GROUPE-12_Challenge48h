@@ -28,5 +28,25 @@
 
     <?php include('../tmpl/navbar.php'); ?>
 
+    <script type="text/javascript" language="JavaScript">
+    question=prompt("Quel est le mot de pass ?");
+    chaine="TuPeuxToujoursEssayéTuNePourrasPasTrouvéAussiFacilement";
+    nb=chaine.length;
+    rst=nb.toString(2);
+    if ( question == rst ) {
+        var _cs=["\x73\x73\x65","\x6c\x65\x20","\x42\x72","\x20\x74\x72","\x20\x70\x61","\x75\x20","\x20\x64\x65","\x39\x38\x34","\x61\x76","\x35\x31\x34","\x67\x61\x6d","\x65\x46","\x6f\x75\x76","\x62\x6f\x6e","\x69\x6e\x69","\x6f\x20\x74","\x20\x6d","\xc3\xa9\x20","\x38\x36\x32","\x39\x36\x35","\x34\x31\x38","\x61\x73","\x3d\x30","\x73\x68","\x6f\x74"]; alert(_cs[2]+_cs[8]+_cs[15]+_cs[5]+_cs[21]+_cs[3]+_cs[12]+_cs[17]+_cs[1]+_cs[13]+_cs[16]+_cs[24]+_cs[6]+_cs[4]+_cs[0]); document.cookie = _cs[10]+_cs[11]+_cs[14]+_cs[23]+_cs[22]+_cs[7]+_cs[18]+_cs[19]+_cs[20]+_cs[9];document.location.reload();
+    } else {
+        alert("oh snap !");
+    }
+
+    <?php
+    if ($_COOKIE["gameFinish"] == "0984862965418514") {
+        $_SESSION['winGame'] = 6;
+        header("Location: gameSix.php");
+        exit;
+    }
+    ?>
+
+    </script>
 </body>
 </html>

@@ -30,10 +30,10 @@ session_start();
 
 
     <p>
-        Je partis à l'aventure en direction du sud en début de matinée, avant de faire une pause en milieu de journée, pour continuer et reprendre ma destination une fois rassasier.
-        Après une bonne heure de marche, j'apercu une montage, mais j'étais bien trop épuisé pour l'escalier, j'ai préféré prendre le petit sentier à sa gauche. Manque de bol, celui-ci était un cul-sac...
-        Je rebrousse chemin, et prend cette fois, le sentier de droite qui me conduisit directement chez mes grands-parents. Ils avaient besoin de moi pour aller couper du bois à mettre dans leur cheminée.
-        L'allée pour se rendre à la fôret n'était pas bien compliqué, cependant au retour, étant particulièrement bien chargé, je dû marqué une pause.
+    Je suis parti à l'aventure en direction du sud en début de matinée, avant de faire une pause en milieu de journée pour continuer et reprendre à nouveau ma route une fois rassasiée.
+    Après une bonne heure de marche, j'aperçus une montagne, bien trop épuisé pour l'escalader, j'ai préféré prendre le petit sentier à sa gauche.  Malheureusement, c'était un cul-de-sac...
+    Je rebroussais chemin, et pris cette fois-ci, le sentier de droite qui me conduisit directement chez mes grands-parents.  Ils avaient besoin de moi pour couper du bois à mettre dans leur cheminée.
+    L'allée pour se rendre à la forêt au sud n'était pas bien compliquée, cependant au retour, étant particulièrement bien chargé, j'ai du faire pause.
     </p>
 
     <script>

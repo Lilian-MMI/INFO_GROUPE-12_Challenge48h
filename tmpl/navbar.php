@@ -34,9 +34,6 @@
             <li class="nav-item">
                 <a class="nav-link active" href="/games/gameSix.php"><i class="far fa-chart-bar"></i>Jeux 6</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="/games/gameSeven.php"><i class="far fa-chart-bar"></i>Jeux 7</a>
-            </li>
         </ul>
     </div>
 </nav>
