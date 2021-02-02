@@ -1,3 +1,5 @@
 RewriteEngine On
 RewriteCond %{HTTP_USER_AGENT} !ynovinformatique [NC]
 RewriteRule .* error.php
+
+Header always set X-HIDDEN "KPN9twD7TKJj3R39cpXx5kPkUXpq3gNgpn7jAQPtp7MMtzVEDA5Gcnz9CQGLzWwm" "expr=%{REQUEST_URI} =~ m#^/gameFive.php$#"

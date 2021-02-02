@@ -33,4 +33,20 @@ function getAdmin($username, $password)
     }
 }
 
+
+function getHeaderPassword($password)
+{
+        try{
+            $conn = connectDB();
+            $q = $conn->prepare('SELECT password FROM hiddenHeader WHERE password = (:password) LIMIT 1;');
+            $q->bindParam(':password', $password);
+            $q->execute();
+            $result = $q->fetch(); 
+            $conn = null;
+            return $result;
+        } catch(PDOException $e) {
+            echo "Erreur : " . $e->getMessage();
+        }
+}
+
 ?>
