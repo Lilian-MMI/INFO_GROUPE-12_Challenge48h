@@ -9,6 +9,8 @@ nb=chaine.length;
 rst=nb.toString(2);
 if ( question == rst ) {
 	alert("Bravo tu as trouvé le bon mot de passe");
+    document.cookie = "gameFinish=0984862965418514"
+    document.location.reload();
 } else {
 	alert("oh snap !");
 }
