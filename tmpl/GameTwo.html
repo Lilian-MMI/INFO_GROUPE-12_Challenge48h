@@ -1,0 +1,77 @@
+<html>
+    <header>
+        <meta charset="UTF-8"> 
+        <link type="text/css" rel="stylesheet" href="../src/css/styles.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+            var echec = "Txh2";
+            function Image1() {
+                var answer_Id = document.getElementById('answer').value;
+                var image_Id = document.getElementById('img');
+                var indice = "Besoin d'aide ? Utilise la tour en h6.."
+                var msg = "Aïe mauvaise réponse";
+                if (answer_Id == "Txh2") {
+                    image_Id.src = "../src/Images/coup1.png";
+                    document.getElementById('answer').style.display = 'none';
+                    document.getElementById('validation').style.display = 'none';
+                    document.getElementById('next').style.display = 'block';
+                }
+                else {
+                    alert(msg);
+                    document.getElementById('answer').value = '';
+                    console.log(indice);
+                }
+            }
+            function Image2() {
+                var image_Id = document.getElementById('img');
+                if (image_Id.src.match("../src/Images/coup1.png")) {
+                    image_Id.src = "../src/Images/coupdeux.png";
+                    document.getElementById('answer').value = '';
+                    document.getElementById('answer').style.display = 'block';
+                    document.getElementById('next').style.display = 'none';
+                    document.getElementById('valid').style.display = 'block';
+                }
+            }
+            function Image3() {
+                var msg = "Aïe mauvaise réponse";
+                var answer_Id = document.getElementById('answer').value;
+                var image_Id = document.getElementById('img');
+                if (answer_Id == "Dh4") {
+                    image_Id.src = "../src/Images/echec&mat.png";
+                    document.getElementById('answer').style.display = 'none';
+                    document.getElementById('valid').style.display = 'none';
+                }
+                else {
+                    alert(msg);
+                    document.getElementById('answer').value = '';
+                }
+            }
+        </script>
+    </header>
+    <body>
+        <div class="align_block">
+            <div class="title">
+                <h1>Jeux numéro 2 !</h1>
+                <ul>
+                    <li>C'est au noir de jouer</li>
+                    <li>Trouvez les bons coups à faire !</li>
+                    <li>Pour chaque coup on note : R pour Roi, D pour Dame, T pour Tour, F pour Fou et C pour Cavalier</li>
+                    <li>Lorsque la pièce jouée capture une pièce adverse, on le mentionne en ajoutant une croix entre l'initiale de la pièce et la case d'arrivée (Cxe5)</li>
+                </ul>
+            </div>
+            <div class="chessboard">
+                <img id="img" src="../src/Images/start.png">
+            </div>
+        </div>
+        <div class="align_button">
+            <div class="input">
+                <input type="text" id="answer" style="display: block" placeholder="Saisir votre réponse ici" disabled>
+            </div>
+            <div class="button">
+                <button type="button" id="validation" onclick="Image1()" style="display: block">Valider</button>
+                <button type="button" id="valid" onclick="Image3()" style="display: none">Valider</button>
+            </div>
+            <button type="button" id="next" onclick="Image2()" style="display: none">Suivant</button>
+        </div>
+    </body>
+</html>
