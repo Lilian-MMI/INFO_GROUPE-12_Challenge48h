@@ -6,23 +6,26 @@ body {
 	display: flex;
 	justify-content: center;
 	padding-top: 5rem;
-	flex-wrap: wrap;
 }
 
 .title {
 	padding: 2rem;
-	width: 25rem;
-	height: 25rem;
+	width: 100%;
 	background-color: #ffffff;
 	border-radius: 5%;
+	max-width: 25rem;
 }
 
 .chessboard {
 	padding: 2rem;
-	width: 25rem;
-	height: 25rem;
+	width: auto;
 	background-color: #ffffff;
 	border-radius: 5%;
+}
+
+.chessboard > img {
+	width: 100%;
+	height: 100%;
 }
 
 .align_button {
@@ -38,8 +41,24 @@ body {
 	display: flex-end;
 }
 
-@media screen and (max-width: 1029) {
+
+@media screen and (max-width: 1030px) {
+	.align_block {
+		flex-wrap: wrap;
+		padding-top: 1rem;
+	}
+}
+@media screen and (min-width: 1030px) {
 	.title {
 		margin-right: 5rem;
 	}
 }
+@media screen and (max-width: 936px) {
+	.title {
+		margin-bottom: 2rem;
+	}
+	.align_block {
+		padding-top: 1rem;
+	}
+}
+

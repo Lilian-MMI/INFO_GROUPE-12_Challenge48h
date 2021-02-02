@@ -4,17 +4,35 @@
         <link type="text/css" rel="stylesheet" href="../src/css/styles.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script type="text/javascript">
-            var echec = "Txh2";
+        var compteur = 0;
+            function reponse() {
+                var media_query = 'screen and (max-width:700px)';
+                var matched = window.matchMedia(media_query).matches;
+                if (matched) {
+                    alert('Txh2')
+                }
+                else {
+                    alert("Tu n'as pas rempli les conditions nécessaires");
+                }
+            }
+            function reponse2() {
+                var msg = "Arrête ! C'est bon, c'est bon la Dame bouge la sur la colonne de droite rhooo";
+                compteur = compteur + 1; 
+                if (compteur == 15) {
+                    alert(msg)
+                }
+            }
             function Image1() {
                 var answer_Id = document.getElementById('answer').value;
                 var image_Id = document.getElementById('img');
-                var indice = "Besoin d'aide ? Utilise la tour en h6.."
+                var indice = "Notre site est responsive pour mobile"
                 var msg = "Aïe mauvaise réponse";
                 if (answer_Id == "Txh2") {
                     image_Id.src = "../src/Images/coup1.png";
                     document.getElementById('answer').style.display = 'none';
                     document.getElementById('validation').style.display = 'none';
                     document.getElementById('next').style.display = 'block';
+                    document.getElementById('reponse').style.display = 'none';
                 }
                 else {
                     alert(msg);
@@ -30,6 +48,8 @@
                     document.getElementById('answer').style.display = 'block';
                     document.getElementById('next').style.display = 'none';
                     document.getElementById('valid').style.display = 'block';
+                    document.getElementById('reponse2').style.display = 'block';
+                    console.log("Sous l'effet de la pression Mr Bouton peut dilvuguer certaines informations")
                 }
             }
             function Image3() {
@@ -73,5 +93,10 @@
             </div>
             <button type="button" id="next" onclick="Image2()" style="display: none">Suivant</button>
         </div>
+        <div class="align_button">
+            <button type="button" id="reponse" onclick="reponse()" style="display: block">Réponse</button>
+            <button type="button" id="reponse2" onclick="reponse2()" style="display: none">Réponse</button>
+        </div>
+
     </body>
 </html>
