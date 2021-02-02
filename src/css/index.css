@@ -397,3 +397,10 @@ a {
         margin: 0px 15px
     }
 }
+
+.button {
+    text-align: left;
+    
+    margin-left: 1060px;
+}
+
