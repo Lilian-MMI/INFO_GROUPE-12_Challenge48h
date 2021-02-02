@@ -1,7 +1,7 @@
 <?php
     session_start();
 
-    if (isset($_SESSION['user']) && $_SESSION['winGame'] == 1) {
+    if (isset($_SESSION['user']) && $_SESSION['winGame'] == 1 || $_SESSION['winGame'] == 2) {
         if ($_COOKIE["sessionTokenApi"] == "987654321") {
             $auth = true;
         } else {
