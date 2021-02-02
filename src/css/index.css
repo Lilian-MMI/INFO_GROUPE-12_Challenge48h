@@ -1,9 +1,4 @@
 #menu {
-    /*min-width: 500px;
-	width: 100%;
-	height: 100px;
-	position: relative;
-	background-color: black;*/
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -42,6 +37,10 @@
 #menu ul li a:hover {
     color: white;
     background-color: #243447;
+}
+
+#paragraphe_erreur_connexion{
+    font-family: 'Roboto', sans-serif !important;
 }
 
 h1 {

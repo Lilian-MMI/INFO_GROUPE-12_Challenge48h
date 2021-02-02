@@ -1,9 +1,9 @@
 <?php
     session_start();
 
-    if (isset($_SESSION['user']) && $_SESSION['winGame'] == 2) {
+    if (isset($_SESSION['user']) && $_SESSION['winGame'] >= 2) {
         $auth = true;
     } else {
-        echo "Vous devez terminer le jeu numéro 2.";
-        header("Location: index.php");
+        echo ("<script>alert('Vous devez terminer le jeu 2')</script>");
+        echo ("<script>window.location = '/index.php';</script>");
     }

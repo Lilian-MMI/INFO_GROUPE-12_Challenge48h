@@ -4,5 +4,6 @@
     if (isset($_SESSION['user'])) {
         $auth = true;
     } else {
-        header("Location: index.php");
+        echo ("<script>alert('Vous devez être connecté')</script>");
+        echo ("<script>window.location = '/index.php';</script>");
     }
