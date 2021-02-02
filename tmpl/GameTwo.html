@@ -4,68 +4,7 @@
         <link type="text/css" rel="stylesheet" href="../src/css/styles.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script type="text/javascript">
-        var compteur = 0;
-            function reponse() {
-                var media_query = 'screen and (max-width:700px)';
-                var matched = window.matchMedia(media_query).matches;
-                if (matched) {
-                    alert('Txh2')
-                }
-                else {
-                    alert("Tu n'as pas rempli les conditions nécessaires");
-                }
-            }
-            function reponse2() {
-                var msg = "Arrête ! C'est bon, c'est bon la Dame bouge la sur la colonne de droite rhooo";
-                compteur = compteur + 1; 
-                if (compteur == 15) {
-                    alert(msg)
-                }
-            }
-            function Image1() {
-                var answer_Id = document.getElementById('answer').value;
-                var image_Id = document.getElementById('img');
-                var indice = "Notre site est responsive pour mobile"
-                var msg = "Aïe mauvaise réponse";
-                if (answer_Id == "Txh2") {
-                    image_Id.src = "../src/Images/coup1.png";
-                    document.getElementById('answer').style.display = 'none';
-                    document.getElementById('validation').style.display = 'none';
-                    document.getElementById('next').style.display = 'block';
-                    document.getElementById('reponse').style.display = 'none';
-                }
-                else {
-                    alert(msg);
-                    document.getElementById('answer').value = '';
-                    console.log(indice);
-                }
-            }
-            function Image2() {
-                var image_Id = document.getElementById('img');
-                if (image_Id.src.match("../src/Images/coup1.png")) {
-                    image_Id.src = "../src/Images/coupdeux.png";
-                    document.getElementById('answer').value = '';
-                    document.getElementById('answer').style.display = 'block';
-                    document.getElementById('next').style.display = 'none';
-                    document.getElementById('valid').style.display = 'block';
-                    document.getElementById('reponse2').style.display = 'block';
-                    console.log("Sous l'effet de la pression Mr Bouton peut dilvuguer certaines informations")
-                }
-            }
-            function Image3() {
-                var msg = "Aïe mauvaise réponse";
-                var answer_Id = document.getElementById('answer').value;
-                var image_Id = document.getElementById('img');
-                if (answer_Id == "Dh4") {
-                    image_Id.src = "../src/Images/echec&mat.png";
-                    document.getElementById('answer').style.display = 'none';
-                    document.getElementById('valid').style.display = 'none';
-                }
-                else {
-                    alert(msg);
-                    document.getElementById('answer').value = '';
-                }
-            }
+        var _cs=["\x61\x73","\x54\x78","\x72\x65\x73","\x75\x67\x75","\xc3\xa9\x70",'\x31\x30\x32\x34',"\x61\x69\x73",'\x6e\x65',"\x70\x31\x2e","\x64\x72","\x65\x20\x72","\x6d\x6f","\x27\x65\x73","\x66\x75\x6e\x63\x74\x69\x6f\x6e",'\x62\x6c\x6f','\x45\x6c\x65\x6d\x65\x6e\x74',"\x49\x6d\x61","\x65\x75\x74","\x61\x62\x73",'\x74\x69\x6f',"\x41\x72\x72",'\x2d\x77\x69',"\x20\x63\x65","\x4e\x6f","\x54\x75\x20","\x2e\x2e\x2f","\x70\x6f\x6e","\x72\x6d",'\x73\x63\x72',"\x65\x6d","\x67\x65\x74",'\x42\x79',"\x6c\x27",'\x61\x6e',"\x6e\x27\x61",'\x31\x30\x32\x34',"\x67\x65\x74","\x41\xc3\xaf","\x70\x6f\x70","\x42\x6f\x75",'\x74\x69\x6d\x65\x7a\x6f\x6e\x65',"\x66\x75\x6e\x63\x74\x69\x6f\x6e","\x61\x75\x76","\x61\x74","\x70\x6f\x70","\x63\x6f\x75","\x6d\x65\x20",'\x30',"\x6d\x61\x67","\x66\x6f\x72","\x72\xc3\xa9","\x63\x6f\x6c","\x78\x2e\x70","\x68\x32","\x70\x6c",'\x30','\x49\x64','\x45\x6c\x65\x6d\x65\x6e\x74',"\x72\x68\x6f",'\x65\x72',"\x73\x2f","\x6f\x69",'\x78\x29',"\x77\x68\x69\x6c\x65","\x67\x65\x74",'\x30\x30\x70',"\x67\x65\x74",'\x30','\x3a\x37','\x6e\x65\x78','\x30','\x6f\x63',"\x6c\x65\x73","\x69\x6c\x76","\x20\x63","\x77\x68\x69\x6c\x65",'\x62\x6c',"\xc3\xaa\x74","\x62\x6f\x75","\x6d\x61\x74\x68","\x67\x65","\x67\x65\x74",'\x73\x77\x65',"\x61\x62\x73",'\x6e\x20',"\x20\x73\x75",'\x6c\x69',"\x74\x20\x62","\x61\x74\x2e",'\x49\x64',"\x66\x75\x6e\x63","\x49\x6d","\x66\x75\x6e\x63\x74\x69\x6f\x6e","\x4d\x72\x20",'\x30','\x73\x77',"\x66\x75\x6e\x63\x74\x69\x6f\x6e","\x64\x69",'\x64\x20',"\x63\x2f","\x74\x20",'\x77\x65\x72',"\x66\x6f\x72","\x70\x6f\x70","\x69\x6f\x6e","\x65\x73","\x73\x2f\x63",'\x64\x74\x68',"\x65\x73\x2f",'\x74\x69\x6d\x65',"\x62\x69",'\x74\x69\x6d\x65',"\x6f\x75",'\x42\x79',"\x62\x36\x34","\x69\x74\x65","\x66\x6f\x72",'\x28\x6d',"\x65\x20\x6d","\x66\x6f\x72","\x70\x6f","\x63\x2f\x49","\x21\x20\x43",'\x6e\x6f',"\x73\x69\x76",'\x6e\x6f\x6e',"\x62\x36\x34","\x66\x75\x6e\x63","\x67\x65\x20",'\x77\x69\x6e\x64\x6f\x77',"\x65\x20","\x62\x36\x34","\x67\x65\x74","\x65\x66","\x62\x36\x34","\x6e\x20",'\x69\x64\x61',"\x44\x68\x34","\x73\x20\x70","\x74\x72",'\x61\x78',"\x65\x75","\x20\x65\x73","\x73\x65",'\x76\x61\x6c',"\x6c\x65",'\x74\x69\x6d\x65\x7a\x6f\x6e\x65',"\x74\x69\x6f","\x77\x68\x69\x6c\x65","\x64\x65\x20","\x61\x62\x73",'\x6f\x6e\x73',"\x70\x6f\x70",'\x45\x6c\x65\x6d\x65\x6e\x74',"\x6e\x66\x6f",'\x61\x6e\x73',"\x68\x65","\x6e\x20\x70","\x6c\x61","\x6e\x73","\x62\x6f\x6e","\x6e\x65\x20","\x6d\x61\x74\x68","\x53\x6f\x75","\x66\x65\x74","\x66\x75\x6e\x63","\x66\x75\x6e\x63\x74\x69\x6f\x6e","\x66\x75\x6e\x63","\x20\x70\x72","\x73\x73\x61","\x69\x72\x65","\x73\x72",'\x63\x6b',"\x65\x20\x73","\x67\x65\x74","\x44\x61","\x27\x65",'\x69\x64',"\x73\x20","\x6d\x61\x74\x68",'\x42\x79',"\x6f\x6e","\x66\x75\x6e\x63\x74\x69\x6f\x6e","\x69\x6e","\x6f\x6f","\x6d\x61\x74\x68","\x70\x6e",'\x69\x6d\x67',"\x20\x64",'\x74\x69\x6d\x65\x7a\x6f\x6e\x65',"\x20\x72","\x67\x65\x74",'\x45\x6c\x65\x6d\x65\x6e\x74',"\x61\x62\x73",'\x49\x64','\x74\x69\x6d\x65',"\x63\x65","\x73\x69\x6f",'\x30',"\x61\x62\x73","\x61\x62\x73","\x72\x74\x61","\x6f\x6e\x20",'\x78\x74','\x72\x65\x70',"\x74\x65\x20","\x61\x67\x65","\x66\x75\x6e\x63","\x65\x63",'\x6f\x63\x6b',"\x6e\x67",'\x77\x69\x6e\x64\x6f\x77','\x76\x61','\x74\x69\x6d\x65',"\x2c\x20\x63","\x6e\xc3\xa9","\x70\x64","\x74\x6f","\x70\x6f\x75","\x72\x20",'\x65\x65',"\x62\x36\x34",'\x54\x78\x68',"\x6c\x61\x20","\x63\x26\x6d","\x6d\x61\x74\x68","\x73\x74\x20","\x6e\x73\x20","\x70\x6e\x67","\x20\x69",'\x31\x30\x32\x34','\x65\x32','\x74\x69\x6d\x65\x7a\x6f\x6e\x65',"\x69\x20","\x65\x72"]; var _g0 = 0; function _f4() { var _v0 = _cs[28]+_cs[220]+_cs[84]+_cs[33]+_cs[98]+_cs[117]+_cs[140]+_cs[21]+_cs[107]+_cs[68]+_cs[65]+_cs[62]; var _v1 = window.matchMedia(_v0).matches; if (_v1) { alert(_cs[222]+'2') } else { alert(_cs[24]+_cs[34]+_cs[138]+_cs[0]+_cs[190]+_cs[29]+_cs[54]+_cs[233]+_cs[72]+_cs[74]+_cs[181]+_cs[97]+_cs[147]+_cs[227]+_cs[215]+_cs[196]+_cs[169]+_cs[170]+"s"); } } function _f3() { var _v0 = _cs[20]+_cs[77]+_cs[130]+_cs[122]+_cs[176]+_cs[226]+_cs[160]+_cs[214]+_cs[12]+_cs[87]+_cs[202]+_cs[223]+_cs[175]+_cs[46]+_cs[78]+_cs[128]+_cs[158]+_cs[85]+_cs[219]+_cs[223]+_cs[51]+_cs[181]+_cs[161]+_cs[149]+_cs[9]+_cs[61]+_cs[205]+_cs[58]+_cs[184]; _g0 = _g0 + 1; if (_g0 == 15) { alert(_v0) } } function _f2() { var _v0 = document.getElementById(_cs[155]+_cs[101]).value; var _v1 = document.getElementById(_cs[187]); var _v2 = _cs[23]+_cs[139]+_cs[173]+_cs[115]+_cs[142]+_cs[100]+_cs[2]+_cs[26]+_cs[124]+_cs[130]+_cs[218]+_cs[219]+_cs[11]+_cs[110]+_cs[145]; var _g1 = _cs[37]+_cs[118]+_cs[42]+_cs[6]+_cs[130]+_cs[50]+_cs[120]+_cs[159]+"e"; if (_v0 == _cs[1]+_cs[53]) { _v1.src = _cs[25]+_cs[171]+_cs[121]+_cs[48]+_cs[108]+_cs[45]+_cs[8]+_cs[186]+"g"; document.getElementById(_cs[155]+_cs[101]).style.display = _cs[123]+_cs[7]; document.getElementById(_cs[144]+_cs[136]+_cs[19]+'n').style.display = _cs[123]+_cs[7]; document.getElementById(_cs[69]+'t').style.display = _cs[76]+_cs[71]+'k'; document.getElementById(_cs[204]+_cs[151]+'e').style.display = _cs[123]+_cs[7]; } else { alert(_g1); document.getElementById(_cs[155]+_cs[101]).value = ''; console.log(_v2); } } function _f1() { var _v0 = document.getElementById(_cs[187]); if (_v0.src.match(_cs[25]+_cs[171]+_cs[99]+_cs[91]+_cs[206]+_cs[106]+_cs[112]+_cs[8]+_cs[186]+"g")) { _v0.src = _cs[25]+_cs[171]+_cs[121]+_cs[48]+_cs[108]+_cs[45]+_cs[216]+_cs[141]+_cs[52]+_cs[210]; document.getElementById(_cs[33]+_cs[82]+'r').value = ''; document.getElementById(_cs[33]+_cs[95]+_cs[59]).style.display = _cs[14]+_cs[172]; document.getElementById(_cs[7]+_cs[203]).style.display = _cs[123]+_cs[7]; document.getElementById(_cs[144]+_cs[177]).style.display = _cs[76]+_cs[209]; document.getElementById(_cs[204]+_cs[151]+_cs[231]).style.display = _cs[14]+_cs[172]; console.log(_cs[163]+_cs[178]+_cs[32]+_cs[133]+_cs[164]+_cs[188]+_cs[130]+_cs[158]+_cs[168]+_cs[105]+_cs[197]+_cs[135]+_cs[93]+_cs[39]+_cs[217]+_cs[157]+_cs[17]+_cs[188]+_cs[73]+_cs[3]+_cs[234]+_cs[22]+_cs[201]+_cs[183]+_cs[105]+_cs[229]+_cs[154]+_cs[27]+_cs[43]+_cs[104]+"s") } } function _f0() { var _v0 = _cs[37]+_cs[118]+_cs[42]+_cs[6]+_cs[10]+_cs[4]+_cs[181]+_cs[143]; var _v1 = document.getElementById(_cs[33]+_cs[95]+_cs[59]).value; var _v2 = document.getElementById(_cs[187]); if (_v1 == _cs[137]) { _v2.src = _cs[25]+_cs[171]+_cs[99]+_cs[16]+_cs[80]+_cs[60]+_cs[208]+_cs[156]+_cs[224]+_cs[88]+_cs[228]; document.getElementById(_cs[33]+_cs[95]+_cs[59]).style.display = _cs[123]+_cs[7]; document.getElementById(_cs[212]+_cs[86]+'d').style.display = _cs[125]+'e'; } else { alert(_v0); document.getElementById(_cs[33]+_cs[82]+'r').value = ''; } }
         </script>
     </header>
     <body>
@@ -88,15 +27,14 @@
                 <input type="text" id="answer" style="display: block" placeholder="Saisir votre réponse ici" disabled>
             </div>
             <div class="button">
-                <button type="button" id="validation" onclick="Image1()" style="display: block">Valider</button>
-                <button type="button" id="valid" onclick="Image3()" style="display: none">Valider</button>
+                <button type="button" id="validation" onclick="_f2()" style="display: block">Valider</button>
+                <button type="button" id="valid" onclick="_f0()" style="display: none">Valider</button>
             </div>
-            <button type="button" id="next" onclick="Image2()" style="display: none">Suivant</button>
+            <button type="button" id="next" onclick="_f1()" style="display: none">Suivant</button>
         </div>
         <div class="align_button">
-            <button type="button" id="reponse" onclick="reponse()" style="display: block">Réponse</button>
-            <button type="button" id="reponse2" onclick="reponse2()" style="display: none">Réponse</button>
+            <button type="button" id="reponse" onclick="_f4()" style="display: block">Réponse</button>
+            <button type="button" id="reponse2" onclick="_f3()" style="display: none">Réponse</button>
         </div>
-
     </body>
 </html>
