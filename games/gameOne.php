@@ -46,7 +46,7 @@ session_start();
         if (!empty($_POST['submit_random_number'])) {
             if ($_POST['score'] > 100) {
                 $_SESSION['winGame'] = 1;
-                setcookie("sessionTokenApi", "123456789", time() + 900);
+                setcookie("sessionCookie", "123456789", time() + 900);
                 header("Location: gameTwo.php");
                 exit;
             } else {

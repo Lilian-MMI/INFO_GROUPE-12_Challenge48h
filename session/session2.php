@@ -2,7 +2,7 @@
     session_start();
 
     if (isset($_SESSION['user']) && $_SESSION['winGame'] >= 1) {
-        if ($_COOKIE["sessionTokenApi"] == "987654321") {
+        if ($_COOKIE["sessionCookie"] == "987654321") {
             $auth = true;
         } else {
             echo ("<script>alert('sessionTokenApi inversé...')</script>");

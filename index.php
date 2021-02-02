@@ -50,7 +50,7 @@ session_start();
                         </label> <input type="password" name="password_admin" placeholder="Votre mot de passe" required>
                     </div>
                     <div class="row px-3 mb-4">
-                        <a href="#" class="ml-auto mb-0 text-sm" hidden onclick="console.log('sql manipulate results...')">Mot de passe
+                        <a href="#" class="ml-auto mb-0 text-sm" hidden onclick="console.log('user can manipulate results with sql...')">Mot de passe
                             oublié?</a>
                     </div>
                     <div class="row mb-3 px-3"> <input class="btn input_button" type="submit" value="Connexion" name="upload_connexion">
