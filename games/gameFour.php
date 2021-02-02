@@ -1,7 +1,7 @@
 <?php
 ob_start();
-require 'database.php';
-require './session/session3.php';
+require '../database.php';
+require '../session/session4.php';
 session_start();
 ?>
 
@@ -24,7 +24,7 @@ session_start();
             $passwordHeader = getHeaderPassword($_POST['password_header']);
 
             if (!empty($passwordHeader)) {
-                $_SESSION['winGame'] = 4;
+                $_SESSION['winGame'] = 3;
                 header("Location: gameFive.php");
                 exit;
             } else {
