@@ -6,21 +6,21 @@ body {
 	display: flex;
 	justify-content: center;
 	padding-top: 5rem;
+	flex-wrap: wrap;
 }
 
 .title {
-	border: 2px;
 	padding: 2rem;
 	width: 25rem;
+	height: 25rem;
 	background-color: #ffffff;
 	border-radius: 5%;
-	margin-right: 5rem;
 }
 
 .chessboard {
-	border: 2px;
 	padding: 2rem;
 	width: 25rem;
+	height: 25rem;
 	background-color: #ffffff;
 	border-radius: 5%;
 }
@@ -29,8 +29,17 @@ body {
 	margin-top: 1rem;
 	display: flex;
 	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 10rem;
 }
 
 .button {
 	display: flex-end;
+}
+
+@media screen and (max-width: 1029) {
+	.title {
+		margin-right: 5rem;
+	}
 }
