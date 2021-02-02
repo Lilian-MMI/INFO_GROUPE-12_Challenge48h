@@ -27,6 +27,9 @@ h1
     display: flex;
     justify-content: center;
     margin-top: 15%;
-    front-size
 }
 
+pre{
+    font-size: large;
+    color: white;
+}
