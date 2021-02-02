@@ -9,9 +9,9 @@
     <body>
         <h1>Welcome on my Website</h1>
         <div id="formulaire">
-            <form method="POST" action="/">
-                <input type="text" name="user" class="user" placeholder="Username"/>
-                <input type="password" name="password" class="password" placeholder="Password" />
+            <form method="POST" action="" id="form" name="formSaisie" onsubmit="return valider()">
+                <input type="text" name="user" class="user" placeholder="Username" required/>
+                <input type="password" name="password" class="password" placeholder="Password" required/>
                 <input type="submit" name="valid" class="valid" value="Connexion" />
             </form>
         </div>
@@ -34,3 +34,19 @@
         
     </body>
 </html>
+
+<script type="text/javascript">
+    function valider() {
+        if(document.formSaisie.user.value != "4dm1n32") {
+            alert("Le nom d'utilisateur est incorrect");
+            return false;
+        }
+        else if(document.formSaisie.password.value !="sd5f4sdf546sd54") {
+            alert("Le mot de passe est incorrect");
+            return false
+        }
+        else {
+            return true;
+        }
+    }
+</script>
