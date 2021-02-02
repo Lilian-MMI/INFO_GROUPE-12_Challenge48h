@@ -5,7 +5,7 @@
         if ($_COOKIE["sessionCookie"] == "987654321") {
             $auth = true;
         } else {
-            echo ("<script>alert('sessionTokenApi inversé...')</script>");
+            echo ("<script>alert('sessionCookie inversé...')</script>");
             echo ("<script>window.location = 'gameOne.php';</script>");
         }
     } else {
